@@ -1,0 +1,40 @@
+.pict{
+   
+    position: absolute;
+    margin-left: 46em;
+    margin-top: -11em;
+}
+
+.oo{
+    height: 12em;
+
+}
+
+.title1{
+    
+    margin-left: 4em;
+    background: #ebf7f5c5;
+    box-shadow: 0px 0px 15px 1px #b8b8b6d0;
+   
+    margin-top: 5em;
+    padding: 1em;
+    position: absolute;
+    border-radius: .7em;
+    padding-right: 19em;
+}
+
+.txt1{
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: 14em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.txt2{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 1em;
+    color: rgb(108, 108, 110);
+    text-shadow: 1px 1px 5px rgb(113, 169, 243);
+}

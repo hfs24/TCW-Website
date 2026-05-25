@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="rebt.css">
+</head>
+<body>
+
+<div class="lef">
+  
+<p class="tx7">
+<span class="tx4">
+<b>TCW is rebooting and will restart in few seconds <br> Please try to
+    <span onclick="updpage()" style="cursor: pointer; color:brown;">RECONNECT </span>  </b>
+</span>
+</p>
+
+</div>
+<script>
+    window.onload=function() {
+        
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/reboot", true);
+        xhr.send();
+    }
+
+    function updpage() {
+        fetch('defport.txt')
+        .then(response => response.text())
+        .then(data => {
+        let url = 'http://tcwmanager.local:'+data;
+        window.open(url,"_self");
+        });
+        
+        
+        }
+
+</script>
+</body>
+</html>

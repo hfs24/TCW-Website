@@ -1,0 +1,86 @@
+#Set Wireless STA parameters 
+ssid=None
+ip=None
+netmask=255.255.255.0
+gtway=192.168.1.1
+DHCP=1
+natsta=0
+activsta=0
+#Set Wireless AP parameters 
+input1_maxwifichan=1
+input1_maxwificon=1  
+activap=0
+ssidap=AKSIL_AP
+natap=0
+ipap=192.168.4.1
+netmaskap=255.255.255.0
+gtwayap=192.168.4.1
+hiddenap=0
+#Set  Ethernet parameters 
+ipethernet=10.10.1.2
+netmaskethernet=255.255.255.0
+gtwayethernet=10.10.1.1
+nateth=0
+activeth=1
+dnsethernet=8.8.8.8
+#Port1 SSH Settings 
+SshPort=5000
+sshtimeout=5
+terminalmo=CLOUD
+hostaddress=services.aksiltechnologies.com
+rmtsshport=22 
+STATECLOUDCON1=0
+CLOUDS2=0
+#Port2 SSH Settings 
+SshPort2=5001
+sshtimeout2=5
+terminalmo2=CLOUD
+hostaddress2=services.aksiltechnologies.com
+rmtsshport2=22
+STATECLOUDCON2=0
+CLOUDS2=0
+# Port1 Serial Settings 
+input1_serial=115200
+parity=Disable 
+stopbit=1
+databit=8
+flowctrl=ctsrts
+CTSRTSVAL=1
+#Port2 Serial Settings 
+input1_serial2=9600
+parity2=Disable
+stopbit2=1
+databit2=8 
+flowctrl2=ctsrts 
+CTSRTSVAL2=1
+#Port1 Collaboration  Settings 
+Collab=0
+logging=0
+SENS1=0
+oksendlog=0
+oknotify=0
+onsynchro=0
+defmodconn=1
+autoconfsave=1
+#Port2 Collaboration  Settings 
+Collab2=0
+logging2=0
+SENS2=0
+oksendlog2=0
+oknotify2=0
+mailrecipient2=no-reply@xxxxxx.com
+#Administration Settings
+webloginid=admin
+sshuser=root
+sshuser2=root
+hostname=TCW_2S1E
+SerialNumber=VSKZ-SLV2-QQH8-R6FP
+PartNumber=2S1E
+defport=8001 
+input1_gmt=GMT+1
+dayStamp=2023-01-01
+timeStamp=00:00:00
+smtphost=ssl0.ovh.net
+smtpport=465
+authoremail=notifications@aksiltechnologies.com
+mailrecipient=no-reply@xxxxxx.com

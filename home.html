@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styleside.css"> <!-- sidebar style --> 
+<title>AKSIL</title> <!-- web onglet title -->
+</head>
+
+<body>
+
+<header> <!--website top bar  -->
+<div class="logo-text"> TCW MANAGER</div>  <!-- title -->
+<h6 class="t00"> Aksil technologies ©</h6> 
+
+<p class="showw"><!-- small screen top bar menu -->
+<img src="menu2.png" class="fa fa-bars menu-toggle" onclick="sho()">
+</p>  
+<ul class="nav" id="ici">  <!-- top bar menu -->
+ <li> <a href="home.html"><span> <img src="home.png"> </span> </i>Home</a></li>
+ <li> <a href="about.html"><span> <img src="about.png"> </span> About</a></li>
+ <li> <a href="contact.html"><span> <img src="contact.png"> </span> Contact</a></li>
+ <li> <a href="logged-out.html"> <span> <img src="shut.png" onclick="logoutButton()"> </span> Logout</a></li>
+ <li class="lft">   <a href="rebooting.html" class="lft2" onclick="if(!confirm('Are you sure to REBOOT TCW module ?')){return false;}">  Reboot</a>
+</ul>
+</header>
+
+
+
+
+<div  id="sidebarr" > <!-- sidebar menu -->
+ <aside class="side-bar-wrap">
+
+ <nav class="side-bar">
+ <a href="loogo.webp" style="pointer-events: none;"> <img class="pic" src="loogo.webp" ></a> <!-- page logo -->
+ <p id="datetime" class="date"></p> <!-- current time and date  -->
+ <ul> <!-- sidebar menu -->
+  <li id="net1" onclick="fcnet()" class="wst8 wst7 wst6 wst5 wst3 wst11 wst9 wst10 wst4">
+    <a> Network Configuration<img src="down.png" class="io1"> </a>
+  </li>
+
+    <div class="wrapper">  <!--Network  sidebar submenu -->
+              <li id="li1" style="display: none;" class="mk hid2 hid3 hid6">
+                <p class="btn wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="wrsta">
+                  <a onclick="showwirelesssta()"  href="index.html#wirelesssta" >
+                     <span> <img src="wifi.png" > </span> 
+                     <span class="title lf">STA Wireless </span>
+                  </a>
+                 </p>
+              </li>
+  
+              <li id="li2" style="display: none;" class="mk hid2 hid3 hid6">
+                <p class="btn wst wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="wrlap">
+                <a onclick="showwirelessap()"  href="index.html#wirelessap">
+                  <span> <img src="router.png"> </span> 
+                   <span class="title lf">AP Wireless</span>
+                </a>
+                </p>
+              </li>
+  
+              <li  id="li3" style="display: none;" class="mk hid2 hid3 hid6">
+              <p class="btn wst wst1 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="net"  >
+              <a onclick="shownetwork()"   href="index.html#Network">
+                <span> <img src="ether.png"> </span> 
+                  <span class="title lf">Ethernet Network</span>
+              </a>
+              </p>
+              </li>
+   </div>        
+  
+          <li id="net2" onclick="fcnet2()" class="wst wst1 wst2 wst6 wst7 wst8">    
+          <a>  Terminal Configuration  <img src="down.png" class="io1"></a>
+          </li>
+  
+          <div class="wrapper"> <!--Terminal sidebar submenu -->
+              <li  id="li4" style="display: none;" class="mk hid1 hid3 hid6" onclick="fcnet4()">
+                <p class="btn wst wst1 wst2 wst3 wst5 wst6 wst7 wst8 wst11" id="srl1">
+                <a>
+                  <span ><img src="serial.png"></span>
+                  <span class="title lf">Serial Port 1</span>
+                </a>
+                </p>
+             </li>
+
+               <li  id="li8" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+                <p class="btn wst wst1 wst2 wst3 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="act2">
+                <a onclick="showsshset()"  href="index.html#sshset">
+                    <span class="title lf">SSH setting</span>
+                </a>
+                </p>
+               </li>
+  
+            <li  id="li9" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+              <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst10 wst11" id="act3">
+              <a onclick="showserset()"  href="index.html#serialset">
+              <span class="title lf">serial setting</span>
+              </a>
+              </p>
+          </li>
+ 
+          <li  id="li10" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+            <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst11" id="act4">
+            <a onclick="showcollab()"  href="index.html#collabset">
+                <span class="title lf">collaboration setting</span>
+            </a></p>
+        </li>
+ 
+            <li  id="li5" style="display: none;" class="mk hid1 hid3 hid6" onclick="fcnet5()">
+              <p class="btn wst wst1 wst2 wst4 wst6 wst7 wst8 wst9 wst10" id="srl2">
+              <a>
+                <span><img src="seri.png"></span>
+                  <span class="title lf">Serial Port 2</span>
+              </a>
+              </p>
+          </li>
+ 
+         
+        <li  id="li11" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+         <p class="btn wst wst1 wst2 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="act1">
+         <a onclick="showsshset2()"  href="index.html#sshset2">
+             <span class="title lf">SSH setting</span>
+         </a></p>
+        </li>
+  
+     <li  id="li12" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+       <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10" id="act6">
+       <a onclick="showserset2()"  href="index.html#serialset2">
+           <span class="title lf">serial setting</span>
+       </a></p>
+     </li>
+  
+   <li  id="li13" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+     <p class="btn wst wst1 wst2 wst3 wst4 wst6 wst7 wst8 wst9 wst10 wst11" id="act5">
+     <a onclick="showcollab2()"  href="index.html#collabset2">
+         <span class="title lf">collaboration setting</span>
+     </a></p>
+  </li>
+  
+         </div>
+
+
+           
+<li onclick="fcnet3()">
+  <p class="btn mk wst wst1 wst2 wst3 wst4 wst5 wst7 wst8 wst9 wst10 wst11" id="adm"> 
+  <a onclick="showadmin()" href="index.html#Administration">
+  <span> <img src="syst.png"> </span> 
+ <span class="title lf lon">administration</span>
+ 
+  </a>
+  </p>
+  </li>
+
+  <li onclick="fcnet7()">
+    <p class="btn mk wst wst1 wst2 wst3 wst4 wst5 wst6 wst8 wst9 wst10 wst11" id="fir"> 
+    <a onclick="showfirmware()"href="index.html#firmware" >
+    <span> <img src="firm.png"> </span> 
+   <span class="title lf lon">Firmware Update</span>
+   
+    </a>
+    </p>
+    </li>
+
+          
+  
+              <li onclick="fcnet6()">
+                <p class="btn mk wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst9 wst10 wst11" id="hl"> 
+                <a onclick="showhelp()"   href="index.html#Help" >
+                <span> <img src="help.png"> </span> 
+                <span class="title lf lon">Help</span>
+                </a>
+                </p>
+              </li>
+       
+ </ul>
+</nav>
+
+</aside>
+</div>
+
+
+
+
+<!-- page Content -->
+<div class="admin-content" >
+
+
+ <span class="admi" id="admi" ><img class="pic2" src="spin1.webp" ></span> <!-- loading icon when page is slow -->
+
+
+<!--  Network Configuration ,right table -->
+ <table class="tab2">  
+
+  <h3 class="titltab">Network Configuration</h3>
+<!-- tab titles -->
+ <tr>
+  <th class="po v2 wdt"><br>
+
+ <span class="thh1">WiFi Networks
+  <span class="thh2">
+  <button id="7" name="scan" class="butn desab" style="margin-left: -1.5em;" onclick="setTimeout(scanfunction, 10000); timeleft(); scanrealfunction(this)" >Scan</button>
+  <img src="spin1.webp" class="spin3" style="display:none;" id="spin" > 
+  <div class="tooltip45" style="margin-left: 4.2em;margin-top:-.1em;">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+ </span>
+ 
+</span>
+
+ <br><br>
+
+ <span class="thh1">Enable DHCP
+ <span class="thh22">
+  <span class="swit442" style="display:none;" id="actv10"></span>
+ <label class="swit44">
+  <input type="checkbox" onchange="toggleCheckbox14(this)" id="11"><span class="slider2"></span>
+   <span class="sli3" id="slid" style="display: none;"></span>
+    </label>
+   <div class="tooltip45" style="margin-left: 2.6em;margin-top:-1.1em;">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+ 
+ </span>
+</span>
+
+ </th>
+ 
+  <th class="po">Enable Interface</th>
+  <th class="po">Enable NAT Translation</th>
+</tr>
+<!--sta-->
+<tr>
+ <!-- column 1 row 2 -->
+<th class="po">Station
+ <br><br>
+<div id="tx1" class="tx1">
+<span class="min">current IP adress</span><br> <p> <span id="41"></span></p>
+<div class="min2"><span > connected to :</span> <br><p> <span id="40"></span></p></div>
+</div>
+</th>
+ <!-- column 2 row 2 -->
+ <td class="v1">
+  
+ <label class="swit44">
+  <input type="checkbox" name="sta" id="16" onchange="toggleCheckbox18(this)" onclick="alertsta()">
+  <span class="slider"></span>
+   </label>
+  <div class="tooltip45">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+ 
+</td>
+ <!-- column 3 row 2 -->
+ <td class="v1">
+  <span class="swit444" style="display:none;" id="actv1"></span>
+ <label class="swit44" >
+  <input type="checkbox" name="natsta"  id="21" onclick="functionn8()" onchange='toggleCheckbox15(this)'>
+  <span class="slider"></span>
+   </label>
+  <div class="tooltip455">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+</td>
+</tr>
+
+
+<!--ap-->
+<tr>
+ <!-- column 1 row 3 -->
+ <th class="po">Acces Point   <br><br>
+ <div id="tx2" class="tx1">
+<span class="min">current IP adress</span><br> <p><span id="43"></span></p>
+<div class="min2"> <span > connected to :</span> <p> <span id="44"></span></p></div>
+ </div>
+ </th>
+ <!-- column 2 row 3 -->
+ <td class="v1">
+ <label class="swit44"  >
+  <input type="checkbox" name="ap" id="17"  onchange="toggleCheckbox19(this)" onclick="alertap()">
+  <span class="slider"></span>
+  </label>
+  <div class="tooltip45">
+    <img class="pic6" src="hlp.png"  >
+    <span class="tooltiptext">---</span>
+     </div>
+
+</td>
+ <!-- column 3 row 3 -->
+<td class="v1"> 
+  <span class="swit444" style="display:none;" id="actv2"></span>
+ <label class="swit44">
+  <input type="checkbox" name="natap" id="20"  onclick="functionn8()" onchange="toggleCheckbox16(this)">
+  <span class="slider"></span>
+   </label>
+  <div class="tooltip455">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+</td>
+</tr>
+
+
+<!--ethernet-->
+<tr>
+ <!-- column 1 row 4 -->
+ <th class="po k11">Ethernet Network<br><br>
+ <div id="tx3" class="tx1">
+  <span class="min">current IP adress</span><br> <p> <span id="45"></span></p>
+ </div>
+ </th>
+ <!-- column 2 row 4 -->
+ <td class="v1">
+<label class="swit44">
+  <input type="checkbox"  name="ethernet" id="18" onchange="toggleCheckbox20(this)" onclick="alertether()">
+ <span class="slider"></span>
+  </label>
+ <div class="tooltip45">
+  <img class="pic6" src="hlp.png" >
+  <span class="tooltiptext">---</span>
+   </div>
+
+ </td>
+ <!-- column 3 row 4 -->
+ <td class="v1">
+  <span class="swit444" style="display:none;" id="actv3"></span>
+ <label class="swit44">
+  <input type="checkbox" name="natethernet"  id="19" onclick="functionn8()" onchange="toggleCheckbox17(this)">
+  <span class="slider"></span>
+   </label>
+  <div class="tooltip455">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+</td>
+</tr>
+
+</table>
+
+
+
+<!--SCAN-->
+ <section id="sec" style="z-index: 4;"> 
+  <h2 class="scantitle"> Available Wi-Fi networks <span onclick="closeForm2()" class="cancel22"><span class="n12">x</span> </span> </h2>
+<img src="spin1.webp" class="spin" style="margin-left: 20em; margin-top:-1em;display:none"  id="spin90" > <br>
+    
+</section>
+<form action="/index.html" method="POST"  id="my_form" >
+  
+
+  <div class="formPopup2" id="popupForm3" >
+    
+  <span onclick="closeForm()" class="cancel2">x</span>
+   <br><br>
+   <h5 >Please enter <span id="txt" class="txcol"></span> password </h5>
+  <br>
+   <input type='text' class="ml" id="input1_wifista2" placeholder="Username" name="input1_wifista" >
+ 
+   <input type="password" autocomplete="new-password" class="ml ab1 input2_passwordsta" id="input2_passwordsta" placeholder="Password" name="input2_passwordsta"  >
+   <span class="eye">
+     <a onclick="showpass()">
+     <img src="ey.png" class="ur"></a>
+    </span>
+   
+   <script>
+ 
+   </script>
+   <br><br>
+   <button type="submit" class="btnf2" id="send">connect</button>
+ 
+   </div>
+ 
+ 
+ 
+ </form>
+
+
+<!--  Terminal Configuration ,left table -->
+<h3 class="titltab2">Terminal Configuration</h3>
+
+ <div class="col">
+ <label class="ser1"> serial 1 </label>
+ <label class="ser2"> serial 2 </label>
+<!-- .........................Activate collaboration -->
+<div class="pad">
+  <span class="swit2l" id="actv9" style="display:none;"></span>
+  <label class="swit229m">  
+    <input type="checkbox" onchange="toggleCheckbox(this)" id="3"> <span class="slider"></span>
+     </label>
+    <div class="tooltip454">
+      <img class="pic6" src="hlp.png" >
+      <span class="tooltiptext">---</span>
+       </div>
+ 
+  
+  <span class="bck222" ></span>
+  <span class="swit2o" id="actv4" style="display:none;"></span>
+ <label class="swit2299">
+  
+  <input type="checkbox" onchange="toggleCheckbox7(this)" id="32"> <span class="slider"></span>
+ </label>
+  <div class="tooltip44">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+ <div class="hexagon-wrapper">  
+ <span class="bck1"></span>
+ <div class="hexagon"> <img class="co" src="coll.webp" ><p>Enable collaboration </p></div>
+</div>
+</div>
+
+ <!-- .......................Session Control -->
+ <div class="pad">
+  <span class="swit2l" id="actv8" style="display:none;"></span>
+<label class="swit229m"> <input type="checkbox" onchange="toggleCheckbox1(this);" id="2"> <span class="slider"></span>
+  </label>
+  <div class="tooltip454">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+<span class="bck222"></span>
+<span class="swit2o" id="actv5" style="display:none;"></span>
+<label class="swit2299"> 
+  <input type="checkbox" onchange="toggleCheckbox8(this)" id="22"> <span class="slider"></span>
+  </label>
+  <div class="tooltip44">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+<div class="hexagon-wrapper">
+ <span class="bck1"></span>
+ <div class="hexagon"> <img class="rev3" src="11h.png"> <span class="pr"> <p>Session Control</p></span></div>
+</div>
+</div>
+<!-- .....................Activate logging.............. -->
+<div class="pad">
+<span class="swit2l" id="actv7" style="display:none;"></span>
+<label class="swit229m"><input type="checkbox" onchange="toggleCheckbox3(this)" id="5" ><span class="slider"></span>
+  </label>
+  <div class="tooltip454">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+ <span class="bck222"></span>
+ <span class="swit2o" id="actv6" style="display:none;"></span>
+ <label class="swit2299"><input type="checkbox" onchange="toggleCheckbox4(this)" id="52" ><span class="slider"></span>
+  </label>
+  <div class="tooltip44">
+    <img class="pic6" src="hlp.png" >
+    <span class="tooltiptext">---</span>
+     </div>
+
+
+<div class="hexagon-wrapper">
+ <span class="bck1"></span>
+ <div class="hexagon"> <img class="lo" src="log.webp" ><p>Enable logging </p></div>
+</div>
+ </div>
+ 
+<!-- ........cloud Serial 1.......... -->
+ <span class="mv2">
+<div class="c1" id="55" style="display:none ;">disconnected</div>
+<div class="c1" id="56" style="font-size: .7em;">connected to: <br>
+<span id="60" class="c11"></span></div>
+
+
+ <label class="swit1211">
+ <div class="toggle--push toggle--push--glow">
+  <input type="checkbox" name="cld1" id="33" class="toggle--checkbox" disabled>
+ <label class="toggle--btn" for="33" ></label>
+ </div>
+</label>
+
+</span>
+
+<div class="tooltip45" style="margin-left: -14em;margin-top:-.5em;">
+  <img class="pic6" src="hlp.png" >
+  <span class="tooltiptext">---</span>
+   </div>
+
+
+
+<!-- ........cloud serial 2.......... -->
+ <span class="mv1">
+  <div class="c2" id="57" style="display:none ;" >disconnected</div>
+<div class="c2" id="58" style="font-size: .7em;" >connected to: <br>
+  <span id="61" name="CLOUDADDRESS2" class="c22"></span></div>
+
+   <label class="swit121">
+<div class="toggle--push toggle--push--glow">
+<input type="checkbox" name="cld2" id="34" class="toggle--checkbox" disabled>
+<label class="toggle--btn" for="34" ></label>
+</div>
+</label>
+
+</span>
+
+<div class="tooltip44" style="margin-left: 6em; margin-top:-.5em;">
+  <img class="pic6" src="hlp.png" >
+  <span class="tooltiptext">---</span>
+   </div>
+ </div>
+ 
+
+
+<!--  page footer--> 
+<div id="footer">
+<table class="tab11">
+  <td class="k"><b>Host ID </b></td>
+ <td class="kk"> <p> <span id="46"></span></p></td>
+  
+ <td class="k"><b>Host name </b></td>
+ <td class="kk"><p> <span id="47"></span></p></td>
+  
+ <td class="k"><b>Serial Number</b></td>
+ <td class="kk"><p> <span id="48"></span></p></td>
+  
+ <td class="k"><b>installed Firmware <br> Version</b></td>
+ <td class="kk"><p> <span id="54"></span></p></td>
+
+ <td class="k"><b>latest Firmware <br> Version</b></td>
+ <td class="kk"><p> <span id="53"></span></p></td>
+
+
+</table>
+</div>
+
+
+
+</div>
+
+
+
+
+<!-- javascript files -->
+<script src="home.js"> </script>
+<script src="scan.js"> </script>
+
+</body>
+</html>

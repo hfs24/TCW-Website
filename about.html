@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html   >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="styleside.css">
+
+<title>AKSIL</title>
+</head>
+
+<body>
+
+ <header>
+
+    
+  
+  <div class="logo-text"> TCW MANAGER</div>
+  <h6 class="t00"> Aksil technologies ©</h6>
+
+  <p class="showw">
+    <img src="menu2.png" class="fa fa-bars menu-toggle" onclick="sho()"></p>
+
+     <ul class="nav" id="ici">
+       
+       <li> <a onclick="showhome()"  href="home.html"><span> <img src="home.png"> </span> </i>Home</a></li>
+        <li> <a href="about.html" style="background-color: rgba(21, 132, 235, 0.959);"><span> <img src="about.png"> </span>  About</a></li>
+        <li>  <a href="contact.html"><span> <img src="contact.png"> </span>  Contact</a></li>
+         <li> <a href="logged-out.html"> <span> <img src="shut.png"  onclick="logoutButton()"> </span> 
+          Logout</a></li>
+ 
+
+     </ul>
+     
+     
+
+ </header>
+
+
+
+ <div  id="sidebarr" >
+  <aside class="side-bar-wrap">
+ 
+  <nav class="side-bar">
+  <div class="bor"></div>
+  <a href="loogo.webp" style="pointer-events: none;"> <img class="pic" src="loogo.webp" ></a>
+  <p id="datetime" class="date"></p>
+  <ul>
+   <li id="net1" onclick="fcnet()" class="wst8 wst7 wst6 wst5 wst3 wst11 wst9 wst10 wst4">
+     <a> Network Configuration 
+       <img src="down.png" class="io1"> </a>
+     </li>
+     <div class="wrapper">
+               <li id="li1" style="display: none;" class="mk hid2 hid3 hid6">
+                 <p class="btn wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="wrsta">
+                   <a onclick="showwirelesssta()"  href="index.html#wirelesssta" >
+                      <span> <img src="wifi.png" > </span> 
+                      
+                      <span class="title lf">STA Wireless </span>
+                   </a>
+                  </p>
+                 </li>
+   
+               <li id="li2" style="display: none;" class="mk hid2 hid3 hid6">
+                 <p class="btn wst wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="wrlap">
+                 <a onclick="showwirelessap()"  href="index.html#wirelessap">
+                   <span> <img src="router.png"> </span> 
+                    <span class="title lf">AP Wireless</span>
+                 </a>
+                 </p>
+             </li>
+   
+             <li  id="li3" style="display: none;" class="mk hid2 hid3 hid6">
+               <p class="btn wst wst1 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="net"  >
+               <a onclick="shownetwork()"   href="index.html#Network">
+                 <span> <img src="ether.png"> </span> 
+                   <span class="title lf">Ethernet Network</span>
+               </a></p>
+           </li>
+    </div>        
+   
+           <li id="net2" onclick="fcnet2()" class="wst wst1 wst2 wst6 wst7 wst8">    
+           <a>  Terminal Configuration  <img src="down.png" class="io1"></a>
+           </li>
+   
+           <div class="wrapper">
+               <li  id="li4" style="display: none;" class="mk hid1 hid3 hid6" onclick="fcnet4()">
+                 <p class="btn wst wst1 wst2 wst3 wst5 wst6 wst7 wst8 wst11" id="srl1">
+                 <a>
+                   <span ><img src="serial.png"></span>
+                     <span class="title lf">Serial Port 1</span>
+                 </a>
+               </p>
+   
+             </li>
+             <div>
+                <li  id="li8" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+                 <p class="btn wst wst1 wst2 wst3 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="act2">
+                 <a onclick="showsshset()"  href="index.html#sshset">
+                     <span class="title lf">SSH setting</span>
+                 </a></p>
+             </li>
+   
+             <li  id="li9" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+               <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst10 wst11" id="act3">
+               <a onclick="showserset()"  href="index.html#serialset">
+                   <span class="title lf">serial setting</span>
+               </a></p>
+           </li>
+   <div>
+           <li  id="li10" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid5">
+             <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst11" id="act4">
+             <a onclick="showcollab()"  href="index.html#collabset">
+                 <span class="title lf">collaboration setting</span>
+             </a></p>
+         </li>
+   </div>
+             <li  id="li5" style="display: none;" class="mk hid1 hid3 hid6" onclick="fcnet5()">
+               <p class="btn wst wst1 wst2 wst4 wst6 wst7 wst8 wst9 wst10" id="srl2">
+               <a>
+                 <span><img src="seri.png"></span>
+                   <span class="title lf">Serial Port 2</span>
+               </a></p>
+           </li>
+   </div>
+           <div>
+         <li  id="li11" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+          <p class="btn wst wst1 wst2 wst4 wst5 wst6 wst7 wst8 wst9 wst10 wst11" id="act1">
+          <a onclick="showsshset2()"  href="index.html#sshset2">
+              <span class="title lf">SSH setting</span>
+          </a></p>
+      </li>
+   
+      <li  id="li12" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+        <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst8 wst9 wst10" id="act6">
+        <a onclick="showserset2()"  href="index.html#serialset2">
+            <span class="title lf">serial setting</span>
+        </a></p>
+    </li>
+   
+    <li  id="li13" style="display: none;" class="mk22 hid1 hid3 hid6 hid22 hid4">
+      <p class="btn wst wst1 wst2 wst3 wst4 wst6 wst7 wst8 wst9 wst10 wst11" id="act5">
+      <a onclick="showcollab2()"  href="index.html#collabset2">
+          <span class="title lf">collaboration setting</span>
+      </a></p>
+   </li>
+   </div>
+   </div>
+           <li id="net3" onclick="fcnet3()" class="wst wst1 wst2 wst3 wst4 wst5 wst8 wst9 wst10 wst11">    
+             <a>  System Configuration  <img src="down.png" class="io1"></a>
+             </li>
+             <div class="wrapper">
+               
+               <li  id="li6" style="display: none;" class="mk hid1 hid2 hid6">
+                 <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst7 wst8 wst9 wst10 wst11" id="adm">
+                   <a onclick="showadmin()"   href="index.html#Administration">
+                     <span> <img src="syst.png"> </span> 
+                     <span class="title lf">administration</span>
+                   </a></p>
+               </li>
+   
+               <li  id="li7" style="display: none;" class="mk hid1 hid2 hid6">
+                 <p class="btn wst wst1 wst2 wst3 wst4 wst5 wst6 wst8 wst9 wst10 wst11" id="fir">
+                   <a onclick="showfirmware()"   href="index.html#firmware">
+                     <span> <img src="firm.png"> </span> 
+                       <span class="title lf">Firmware Update</span>
+                   </a></p>
+               </li>
+   </div>
+           
+   
+               <li onclick="fcnet6()">
+                 <p class="btn mk wst wst1 wst2 wst3 wst4 wst5 wst6 wst7 wst9 wst10 wst11" id="hl"> 
+                 <a onclick="showhelp()"   href="index.html#Help" >
+                 <span> <img src="help.png"> </span> 
+                   <span class="title lf lon">Help</span>
+                 
+                 </a>
+                 </p>
+                 </li>
+        
+           </ul>
+ </nav>
+ 
+ </aside>
+ </div>
+
+
+     <!-- Admin Content -->
+     <div class="admin-content" >
+
+<div class="title1">
+  <label class="txt1">ABOUT TCW MODULE </label>
+  <br> <br>
+
+  <label class="txt2">the device </label>
+ 
+  <br><br>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor saepe adipisci laborum beatae quis officia facere labore fuga sapiente quisquam neque aut nesciunt tenetur magni aperiam tempora, inventore eveniet totam.</p>
+  
+ <br><br>
+  <div class="pict">
+       <img src="abtm.png" class="oo">
+      </div>
+      
+</div>
+
+    
+
+      
+
+    </div>
+    <!-- // Admin Content -->
+
+
+
+
+<script>
+  const dd = new Date();
+document.getElementById("datetime").innerHTML = dd.toLocaleString("en-GB", {
+day: "numeric",
+month: "short",
+year: "numeric",
+hour: "numeric",
+minute: "2-digit"
+});
+
+</script>
+
+   <script src="data.js"></script>
+
+   
+ 
+  
+</body>
+</html>

@@ -1,0 +1,355 @@
+
+
+/* SideBar */
+aside.side-bar-wrap {
+    --radius-size: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0vh;
+    z-index: 2;
+
+}
+
+
+
+nav.side-bar {
+    min-height: 100%;
+    background-color: 	rgb(14, 60, 100);
+    border-radius: var(--radius-size);
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+    box-shadow: 1px 1px 15px 1px #0808089d ;
+    
+}
+
+nav.side-bar ul {
+    padding: 0;
+    margin: calc(1 * var(--radius-size)) 0;
+    display: flex;
+    flex-direction: column;
+    height: 28em;
+}
+
+nav.side-bar ul li {
+    height: 50px;
+    padding: 0px var(--radius-size);
+    padding-right: 0px;
+    list-style: none;
+    padding-left: 0.2em;  
+    padding-right: 0em;
+    margin-bottom: .5em;
+    border-style: outset;
+    border-width: .15em;
+    border-color: rgb(165, 175, 233);
+    background-color: rgb(9, 30, 49);
+    border-radius: 1em;
+    cursor: pointer;
+
+}
+
+nav.side-bar ul li.mk{
+ width: 80%;
+ margin-left: 0.6em;
+ border-width: .1em;
+ padding-right: 0em;
+ background-color: rgb(9, 30, 49);
+}
+
+nav.side-bar ul li.mk22{
+  width: 55%;
+  margin-left: 2.1em;
+  border-width: .1em;
+  padding-right: 0em;
+  background-color: rgb(0, 4, 7);
+  font-size: 0.84em;
+ 
+ }
+
+nav.side-bar ul li.active {
+    position: relative;
+    background-color: rgba(11, 74, 211, 0.993);
+    border-color: rgb(255, 255, 254);
+
+}
+
+nav.side-bar ul li a{
+    color: rgba(255, 255, 255, 0.952);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: .65em;
+    letter-spacing: .6px;
+    
+}
+
+nav.side-bar ul li p{
+border-radius: 0.8em;
+margin-left: -.15em;
+margin-top: 0em;
+height: 98%;
+}
+
+
+
+/* Style the active class, and buttons on mouse-over */
+.btn:hover {
+  background-color: rgba(21, 132, 235, 0.959);
+}
+
+
+
+  .sr3{
+    margin-top: 0.7em;
+    padding-bottom: 0em;
+    }
+    
+  .sr{
+      padding-top: .6em;
+      padding-left: 0.1em;
+      height: 2.5em;
+ }
+
+  .lf{
+    padding-left: 0.2em;
+  }
+
+  .car{
+    margin-top: 0.4em;
+    width: 3.2em;
+  text-align: right;
+  }
+
+
+  .car2{
+    margin-top: 0.5em;
+    width: .7em;
+    text-align: right;
+}
+
+
+
+.io1{
+  
+  margin-left: -0.2em;
+  }
+
+/*mobile*/
+@media screen and (max-width: 480px){
+
+ 
+  aside.side-bar-wrap {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top:0vh;
+    left: 0vh;
+    z-index: 2;
+
+}
+
+  nav.side-bar {
+    width: 100%;
+    display: inline-block;
+    background-color: 	rgba(7, 118, 192, 0.219);
+    height: 0;
+    margin-left: -1.3em;
+    padding-left: 0em;
+    border-radius: var(--radius-size);
+    border-top-left-radius:  var(--radius-size);
+    border-top-right-radius:  var(--radius-size);
+    border-bottom-left-radius:  var(--radius-size);
+   
+  }
+
+  nav.side-bar ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-top: 0.5em;
+    padding-right: .3em;
+    padding-left: .3em;
+    border-radius: 0.5em;
+    background-color: #fcc8e5a6;
+    width: 23.2em;
+   
+  }
+  
+  nav.side-bar ul li {
+      height: 36px;  
+      margin-top: 0.5em;
+      margin-left: .2em;
+  }
+  
+  nav.side-bar ul li a{
+    font-size: 7.6px;
+    font-weight: bold;
+    margin-left: 0em;
+    text-align: center;
+  }
+
+
+  .io1{
+    margin-left: 0em;
+    margin-top: -.3em;
+    }
+
+
+  nav.side-bar ul li.mk{
+    width: 12em;
+    margin-left: -13em;
+margin-top: -12.2em;
+border-radius: 1em;
+font-size: 7px;
+display: block;
+
+   }
+
+
+   nav.side-bar ul li.mk22{
+    width: 10em;
+    margin-left: -12.3em;
+margin-top: -12.7em;
+border-radius: 1em;
+font-size: 6.7px;
+display: block;
+
+   }
+
+   .wrapper{
+   margin-top: 2.6em;
+}
+.tp0{
+  position: absolute;
+}
+.lon{
+  padding-right: 3em;
+  padding-left: 2em;
+}
+    }
+  
+    @media screen and (max-width: 399px){
+
+   
+    
+      nav.side-bar {
+        width: 100%;
+        height: 0;
+        margin-left: -1.3em;
+        padding-left: 0.1em;
+       
+      }
+    
+      nav.side-bar ul {
+        margin-top: 1em;
+        padding-right: .3em;
+        padding-left: .3em;
+        border-radius: 0.5em;
+        background-color: #fcc8e5d0;
+        width: 21.6em;
+        height: 2.6em;
+      }
+      
+      nav.side-bar ul li {
+          height: 30px;  
+          margin-top: 0.2em;
+          margin-left: .2em;
+      }
+      
+      nav.side-bar ul li a{
+        font-size: 7.3px;
+      }
+    
+    
+    
+    
+      nav.side-bar ul li.mk{
+        width: 12em;
+        margin-left: -12em;
+    margin-top: -10.5em;
+    border-radius: 1em;
+    font-size: 6.8px;
+    display: block;
+       }
+    
+    
+       nav.side-bar ul li.mk22{
+        width: 9em;
+        margin-left: -11em;
+    margin-top: -10.5em;
+    border-radius: 1em;
+    font-size: 6.7px;
+    display: block;
+    
+       }
+    
+       .wrapper{
+       margin-top: 2.6em;
+    }
+    .tp0{
+      position: absolute;
+    }
+    .lon{
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+        }
+
+        @media screen and (max-width: 370px){
+
+        
+    
+          nav.side-bar {
+            width: 100%;
+            height: 0;
+            margin-left: -1.6em;
+            padding-left: 0.1em;
+           
+          }
+        
+          nav.side-bar ul {
+            margin-top: 1em;
+            padding-right: .3em;
+            padding-left: .3em;
+            border-radius: 0.5em;
+            background-color:  #fcc8e5d0;
+            width: 20em;
+            height: 2.4em;
+          }
+          
+          nav.side-bar ul li {
+              height: 30px;  
+              margin-top: 0.2em;
+              margin-left: .2em;
+          }
+          
+          nav.side-bar ul li a{
+            font-size: 6.5px;
+          }
+        
+        
+        
+        
+          nav.side-bar ul li.mk{
+            width: 10em;
+            margin-left: -11em;
+        margin-top: -10.5em;
+        border-radius: 1em;
+        font-size: 6.7px;
+        display: block;
+           }
+        
+        
+           nav.side-bar ul li.mk22{
+            width: 8em;
+            margin-left: -10em;
+        margin-top: -10.5em;
+        border-radius: 1em;
+        font-size: 6.6px;
+        display: block;
+        
+           }
+    
+            }

@@ -1,0 +1,293 @@
+.conn{
+    
+    margin-left: 40em;
+    margin-top: 4em;
+    height: 24em;
+    width: 40%;
+    background-color: rgba(0, 68, 255, 0.13);
+    border-radius: 15px;
+    text-align: center;
+}
+.butn3 {
+   display: inline-block;
+    padding: 6px 6px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #3e8febfb;
+    border: none;
+    border-radius: 7px;
+    font-size: .8em;
+    margin-top: 0.4em;
+    margin-left: -5em;
+    position: absolute;
+    }
+
+.cad{
+    width: 70%;
+    margin-top: 2em;
+    margin-left: 25%;
+}
+
+.txt{
+ font-weight: bold;
+ font-size: 1.2em;
+ margin-left: 0em;
+ color: rgb(37, 37, 37);
+ text-shadow: 1.3px 1.3px 3px rgba(0, 68, 255, 0.856);
+
+}
+
+textarea{
+    margin-left: -0em;
+    margin-top: 0.5em;
+    width: 70%;
+    resize: none;
+    padding: 10px 10px;
+    border: 1px solid rgb(96, 142, 228);
+
+}
+
+
+
+input[type=text] {
+    width: 70%;
+    padding: 10px 10px;
+      margin: 9px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        padding: 9px 9px;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          box-sizing: border-box;
+          font-size: .75em;
+          font-weight: bold;
+          background-color: rgba(9, 75, 173, 0.781);
+          margin-left: 0em;
+
+        }
+
+     
+
+        .bor{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            height: 10em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            border-radius: .5em;
+            border:  2.4px  solid rgba(0, 68, 255, 0.342);
+        }
+        .bor2{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            height: 10em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            
+            border-radius: .5em;
+            border:  2.4px  solid rgba(0, 68, 255, 0.342);
+        }
+        .bor3{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            height: 10em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            border-radius: .5em;
+            border:  2.4px  solid rgba(0, 68, 255, 0.342);
+        }
+        .bor4{
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            width: 35%;
+            height: 10em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            border-radius: .5em;
+            border:  2.4px  solid rgba(0, 68, 255, 0.342);
+         }
+
+      
+
+      
+.pho{
+    position: absolute;
+    margin-left: 5.6em;
+    height: 3em;
+    margin-top: 0.4em;
+}
+
+.te{
+    margin-top: 4em;
+text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.te2{
+    margin-top: 4em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+.te3{
+    margin-top: 4em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+.zt{
+    margin-top: 2em;
+    text-align: center;
+    font-size: 0.85em;
+    color: rgb(7, 21, 82);
+    text-transform: none;
+
+}
+.zt1{
+    margin-top: 1.9em;
+    text-align: center;
+    margin-left: 3em;
+    font-size: 0.85em;
+    color: rgb(7, 21, 82);
+    text-transform: none;
+
+}
+
+@media screen and (max-width: 480px){
+  
+    .conn{
+        margin-left: 1.9em;
+        margin-top: 1em;
+        width: 80%;
+        height: 13em;
+        padding-left: 0em;
+        text-align: center;
+
+    }
+
+   
+    
+    .cad{
+        width: 105%;
+        height: 14em;
+        margin-top: 1em;
+        margin-left: 0em;
+        text-align: center;
+    }
+
+
+    .bor{
+        width: 42%;
+        height: 6em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+
+    }
+    .bor2{
+        width: 42%;
+        height: 6em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+    .bor3{
+        width: 42%;
+        height: 6em;
+        margin-right: 1em;
+        margin-bottom: 1em; 
+
+    }
+    .bor4{
+        width: 42%;
+        height: 6em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+
+     }
+
+     .pho{
+        position: absolute;
+        margin-left: 3em;
+        height: 2em;
+        margin-top: 0.4em;
+    }
+
+    .te{
+        margin-top: 5em;
+       text-align: center;
+        font-weight: bold;
+        font-size: 0.5em;
+    }
+    .te2{
+        margin-top: 5em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.5em;
+    
+    }
+    .te3{
+        margin-top: 5em;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.5em;
+    
+    }
+
+    .zt{
+        margin-top: 0em;
+        text-align: center;
+        font-size: 0.6em;
+    
+    }
+.bn{
+    margin-top: -1.5em;
+    margin-left: -7em;
+    width: 65%;
+    position: absolute;
+}
+
+    input[type=text] {
+        width: 70%;
+        padding: 7px 7px;
+          margin: 2px;
+          font-size: .6em;
+        }
+    
+        textarea{
+            height: 5em;
+            width: 60%;
+            margin-top: 1.8em;
+            margin-left: 0em;
+        }
+        input[type=submit] {
+            width: 18%;
+            padding: 4px 8px;
+              padding-left: 1.7em;
+              margin-left: 0em;
+              font-size: .6em;
+            }
+
+            .sub{
+                margin-top: -1em;
+            }
+
+            .txt{
+                font-size: .9em;
+                margin-left: -2em;
+                position: absolute;
+                margin-top: -.9em;
+               }
+                   
+  }

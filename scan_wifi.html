@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" href="styles.css">
+
+
+  </head>
+
+  <body class="scn">
+
+
+
+
+<div class="scanwf">
+  
+<h2 class="scantitle"> Available Wi-Fi networks </h3>
+  
+
+  <form action="/scan_wifi.html" method="POST"  id="my_form" >
+
+ <div class="formPopup2" id="popupForm3">
+ <span onclick="closeForm()" class="cancel2">x</span>
+  <br><br>
+  <h5 >Please enter <span id="txt" class="txcol"></span> password </h5>
+ <br>
+  <input type='text' class="ml" id="input1_wifista" placeholder="Username" name="input1_wifista" style="display: none;">
+
+  <input type="password" class="ml ab1" id="input2_passwordsta" placeholder="Password" name="input2_passwordsta"  >
+  <span class="eye">
+    <a onclick="showpass()">
+    <img src="ey.png" class="ur"></a>
+   </span>
+  
+  <script>
+
+  </script>
+  <br><br>
+  <button type="submit" class="btnf2" id="send">connect</button>
+
+  </div>
+
+
+
+</form>
+
+
+
+
+
+<section> 
+  
+  </section>
+
+ 
+</div>
+
+
+
+  <script src="scan.js"></script>
+  
+
+  </body>
+</html>
