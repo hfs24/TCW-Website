@@ -1,32 +1,22 @@
 # TCW Manager – Teleconnect Device Control Panel
 
-A browser-based control panel embedded directly on the Teleconnect device, 
-built for AKSIL Technologies. The interface allows engineers to remotely 
-configure network settings and manage terminal sessions without needing 
-physical access to the hardware.
+A lightweight browser-based control panel embedded directly on the TeleConnect device, developed for AKSIL Technologies. The interface enables engineers and operators to remotely configure network settings and manage serial terminal sessions without requiring physical access to the hardware.
 
 ## Why It Was Built
 
-The Teleconnect device is accessed over a wireless connection that is often 
-weak or unstable in field environments. Using external libraries like Bootstrap 
-or jQuery would have made the interface too heavy to load reliably, so the 
-decision was made to build entirely in vanilla HTML, CSS, and JavaScript with 
-no dependencies.
+TeleConnect devices are commonly accessed over unstable or low-bandwidth wireless connections in field environments. To ensure fast load times and reliable operation, the interface was built entirely with vanilla HTML, CSS, and JavaScript, without external dependencies such as Bootstrap or jQuery.
 
 ## What It Does
 
-- Configure WiFi, DHCP, NAT, and ethernet network settings
+- Configure Wi-Fi, DHCP, NAT, and Ethernet network settings
 - Manage serial terminal sessions (Serial 1 and Serial 2)
-- Control session collaboration and logging
-- System administration — hostname, SMTP, firmware updates, config import/export
-- Live device status updates pushed to the UI using event listeners and JSON 
-  polling, without page refreshes
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla — no external libraries or frameworks)
+- Control session sharing, collaboration, and logging
+- Perform system administration tasks:
+Hostname configuration
+SMTP settings
+Firmware updates
+Configuration import/export
+- Display live device status updates using event listeners and lightweight JSON polling without requiring page refreshes
 
 ## Testing
 
