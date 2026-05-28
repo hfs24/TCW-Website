@@ -12,10 +12,10 @@ TeleConnect devices are commonly accessed over unstable or low-bandwidth wireles
 - Manage serial terminal sessions (Serial 1 and Serial 2)
 - Control session sharing, collaboration, and logging
 - Perform system administration tasks:
-Hostname configuration
-SMTP settings
-Firmware updates
-Configuration import/export
+   - Hostname configuration
+   - SMTP settings
+   - Firmware updates
+   - Configuration import/export
 - Display live device status updates using event listeners and lightweight JSON polling without requiring page refreshes
 
 ## Testing
