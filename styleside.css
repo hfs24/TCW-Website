@@ -7,7 +7,7 @@ aside.side-bar-wrap {
     position: absolute;
     left: 0vh;
     z-index: 2;
-
+            
 }
 
 
@@ -20,15 +20,15 @@ nav.side-bar {
     border-top-right-radius: 0em;
     border-bottom-left-radius: 0em;
     box-shadow: 1px 1px 15px 1px #0808089d ;
-    
+    padding: 7px;
 }
 
 nav.side-bar ul {
     padding: 0;
-    margin: calc(1 * var(--radius-size)) 0;
     display: flex;
     flex-direction: column;
-    height: 28em;
+    margin-top: 1em;
+
 }
 
 nav.side-bar ul li {
@@ -36,40 +36,41 @@ nav.side-bar ul li {
     padding: 0px var(--radius-size);
     padding-right: 0px;
     list-style: none;
-    padding-left: 0.2em;  
+    padding-left: 0em;  
     padding-right: 0em;
     margin-bottom: .5em;
     border-style: outset;
-    border-width: .15em;
+    border-width: .1em;
     border-color: rgb(165, 175, 233);
-    background-color: rgb(9, 30, 49);
-    border-radius: 1em;
+  
+    border-radius: 5px;
     cursor: pointer;
 
 }
 
 nav.side-bar ul li.mk{
  width: 80%;
- margin-left: 0.6em;
+ margin-left: 0.8em;
  border-width: .1em;
  padding-right: 0em;
- background-color: rgb(9, 30, 49);
+ background-color: rgba(64, 127, 186, 0.658);
+ 
 }
 
 nav.side-bar ul li.mk22{
-  width: 55%;
-  margin-left: 2.1em;
+  width: 60%;
+  margin-left: 2em;
   border-width: .1em;
   padding-right: 0em;
   background-color: rgb(0, 4, 7);
-  font-size: 0.84em;
- 
+  font-size: 1em;
  }
 
 nav.side-bar ul li.active {
     position: relative;
     background-color: rgba(11, 74, 211, 0.993);
     border-color: rgb(255, 255, 254);
+
 
 }
 
@@ -79,16 +80,17 @@ nav.side-bar ul li a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: .65em;
+    font-size: .7em;
     letter-spacing: .6px;
-    
+    padding: 5px
+
 }
 
 nav.side-bar ul li p{
-border-radius: 0.8em;
-margin-left: -.15em;
+border-radius: 0.2em;
 margin-top: 0em;
-height: 98%;
+height: 100%;
+
 }
 
 
@@ -353,3 +355,12 @@ display: block;
            }
     
             }
+
+
+
+
+
+
+
+
+
