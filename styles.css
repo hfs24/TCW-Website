@@ -7,7 +7,7 @@ text-transform: capitalize;
 
 body {
 min-height:100%;
-background: -webkit-linear-gradient(bottom,#f8b5db98,#eceff5d3,#93cefba1);
+background: -webkit-linear-gradient(bottom,#f7e7f098,#eceff5d3,#61b6f7a1);
 background-repeat: no-repeat;
 background-attachment: fixed;
 border: #ff030300 solid 1px;
@@ -22,8 +22,8 @@ color: rgb(255, 255, 255);
 
 
 .pic{ 
-width: 142px;
-height: 95px;
+width: 100%;
+height: 100px;
 }
 
 .pic2{ 
@@ -56,12 +56,11 @@ height: 95px;
 header {
 position: fixed;
 width: 100%;
-margin-top: -5px;
- background: right 40%repeat-x url("8.jpg");
+
  /* background-color: rgba(35, 40, 49, 0.877);*/
 height: 62px;
 z-index: 2;
-box-shadow: 3px 1px 15px 2px #080808d3;
+box-shadow: 3px 1px 15px 2px #08080867;
 border-bottom-right-radius: 1em;
 
 }
@@ -73,20 +72,17 @@ border-bottom-right-radius: 1em;
 
 header .logo-text {
 margin-top: 0em;
-margin-left: 30%;
-color: rgb(247, 197, 62);
+margin-left: 40%;
+color: rgb(29, 6, 106);
 font-family: cursive;
 font-size: 28px;
 font-weight: bold;
-letter-spacing: 5px;
-/*background: linear-gradient(90deg, rgba(16, 72, 156, 0.925) 40%, rgba(146, 189, 238, 0.24) 100%);*/
-background: linear-gradient(90deg, rgba(146, 189, 238, 0.24) -10%, rgba(16,72,165,1) 40%, rgba(66, 148, 243, 0.24) 100%);
 text-align: center;
 position: absolute;
-padding-top: 0.5em;
+padding-top: 0.1em;
 padding-right: 0em;
 height: 80%;
-text-shadow: 6px 2px 5px rgb(8, 8, 8);
+text-shadow: 6px 2px 5px rgba(248, 232, 232, 0.752);
 }
 
 
@@ -127,14 +123,14 @@ position: relative;
 
 header ul li a {
 display: block;
-font-size: .75em;
+font-size: .81em;
 text-decoration: none;
-padding:5px;
+padding:6px;
 border-radius: 8px;
 border-style: outset;
 border-color: rgba(84, 137, 190, 0.897);
-background: rgb(6, 27, 63);
-margin-left: 2px;
+background: rgb(38, 82, 156);
+margin-left: 4px;
 cursor: pointer;
 
 }
@@ -1963,7 +1959,7 @@ margin-top: 0.2em;
 
 
 .lft2{
-  background-color: rgb(218, 132, 3);
+  background-color: rgb(234, 81, 81);
 }
 
 .butn2 {
@@ -2749,12 +2745,12 @@ border-radius: .7em;
 
 
 .t00{
-  margin-left: 36%;
-  margin-top: 4.9em;
+  margin-left: 48%;
+  margin-top: 4.4em;
 position: absolute;
 font-weight: lighter;
 letter-spacing: 0.1em;
-color: rgb(247, 197, 62);
+color: rgb(28, 6, 165);
 font-size: 10px;
 }
 .tab2{
@@ -2838,7 +2834,7 @@ position: absolute;
   #footer {
   position: fixed;
   bottom: 0;
-  margin-left: -1em;
+  margin-left: 1em;
   z-index: -1;
 }
 .th1 {
@@ -2995,8 +2991,7 @@ background-color: rgba(88, 211, 6, 0.993);
  margin-top: -1.35em;
  border-bottom-left-radius: .5em;
  border-bottom-right-radius: .6em;
- 
- 
+
  }
  .admin-content{
  position: absolute;
