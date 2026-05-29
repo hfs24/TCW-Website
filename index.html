@@ -30,6 +30,9 @@
   <li> <a href="contact.html"><span> <img src="contact.png"> </span>  Contact</a></li>
 <li onclick="logoutButton()"> <a> <span> <img src="shut.png"> </span> Logout</a></li>
 <li> <a href="rebooting.html" class="lft2" onclick="if(!confirm('Are you sure to REBOOT TCW module ?')){return false;}">Reboot</a></li>
+<li>
+   .
+</li>
 </ul>
  </header>
 
@@ -546,6 +549,7 @@
 
 
   <select id="input1_maxwifichan" name="input1_maxwifichan" class="desab1">
+    <option value="" >Select one:</option>
   <option value="1" >1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -582,6 +586,7 @@
   
 
 <select id="input1_maxwificon" name="input1_maxwificon"  class="desab1">
+    <option value="" >Select one:</option>
 
 <option value="1">1</option>
 <option value="2">2</option>
@@ -784,6 +789,8 @@
 <div class="med">
 <div class="a3">
 <select id="SshPort" name="SshPort">
+      <option value="" >Select one:</option>
+
 <option value="5000">5000</option>
 <option value="6000">6000</option>
 <option value="7000">7000</option>
@@ -805,6 +812,8 @@
 
 <div class="a3">
 <select  id="sshtimeout" name="sshtimeout">
+      <option value="" >Select one:</option>
+
   <option value="5">5</option>
   <option value="10">10</option>
   <option value="15">15</option>
@@ -868,6 +877,7 @@
 <div class="med">
 <div class="a3">
 <select id="terminalmo" name="terminalmo" onclick="funlog()"  class="desabl">
+<option value="" >Select one:</option>
 <option value="CLOUD">Cloud connection </option>
 <option value="PEER2PEER" > P2P</option>
 
@@ -1017,6 +1027,7 @@
 
 <div class="a01">
 <select id="input1_serial" name="input1_serial" class="a4">
+    <option value="" >Select one:</option>
 
 <option value="115200">115200</option>
 <option value="9600" > 9600</option>
@@ -1040,7 +1051,7 @@
   
 <div class="a01">
 <select id="parity" name="parity" class="a4" >
-
+    <option value="" >Select one:</option>
 <option value="Disable">Disable</option>
 <option value="Odd">Odd</option>
 <option value="Even">Even</option>
@@ -1061,8 +1072,9 @@
   <div class="med">
   <div class="a01">
   <select id="stopbit" name="stopbit" class="a4" >
-<option value="1">1</option>
-<option value="2" >2</option>
+    <option value="" >Select one:</option>
+    <option value="1">1</option>
+    <option value="2" >2</option>
   </select>
   <div class="tooltip66">
     <img class="pic6" src="hlp.png" >
@@ -1080,8 +1092,9 @@
 <div class="med">
 <div class="a01">
   <select id="databit" name="databit" class="a4">
-<option value="8">8</option>
-<option value="7">7</option>
+    <option value="" >Select one:</option>
+    <option value="8">8</option>
+    <option value="7">7</option>
 
   </select>
   <div class="tooltip66">
@@ -1099,6 +1112,7 @@
 <div class="med">
 <div class="a01">
 <select id="flowctrl" name="flowctrl" class="a4">
+  <option value="" >Select one:</option>
   <option value="none">none</option>
   <option value="ctsrts">CTS/RTS</option>
 </select>
@@ -1334,6 +1348,7 @@
   <div class="med">
   <div class="a3">
   <select id="SshPort2" name="SshPort2">
+<option value="" >Select one:</option>
 <option value="5001">5001</option>
 <option value="6001">6001</option>
 <option value="7001">7001</option>
@@ -1357,6 +1372,7 @@
 <div class="med">
 <div class="a3">
 <select  id="sshtimeout2" name="sshtimeout2">
+<option value="" >Select one:</option>
 <option value="5">5</option>
 <option value="10">10</option>
 <option value="15">15</option>
@@ -1430,7 +1446,9 @@
 <div class="med">
 <div class="a3">
 <select id="terminalmo2" name="terminalmo2" onclick="funlog2()" class="desabl2">
-<option value="CLOUD">Cloud connection </option>
+    <option value="" >Select one:</option>
+
+  <option value="CLOUD">Cloud connection </option>
 <option value="PEER2PEER" > P2P</option>
  
 </select>
@@ -1576,7 +1594,7 @@
   
 <div class="a01">
 <select id="input1_serial2" name="input1_serial2" class="a4">
-  
+  <option value="" >Select one:</option>
 <option value="115200">115200</option>
 <option value="9600"> 9600</option>
 <option value="14400">14400</option>
@@ -1598,9 +1616,10 @@
   
   <div class="a01" >
   <select id="parity2" name="parity2" class="a4">
-<option value="Disable">Disable</option>
-<option value="Odd">Odd</option>
-<option value="Even">Even</option>
+    <option value="" >Select one:</option>
+    <option value="Disable">Disable</option>
+    <option value="Odd">Odd</option>
+    <option value="Even">Even</option>
   </select>
   <div class="tooltip66">
     <img class="pic6" src="hlp.png" >
@@ -1616,8 +1635,9 @@
   <div class="med">
   <div class="a01">
   <select id="stopbit2" name="stopbit2" class="a4">
-  <option value="1">1</option>
-  <option value="2">2</option>
+    <option value="" >Select one:</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
   </select>
   <div class="tooltip66">
     <img class="pic6" src="hlp.png" >
@@ -1634,6 +1654,7 @@
 <div class="med">
 <div class="a01">
 <select id="databit2" name="databit2" class="a4">
+  <option value="" >Select one:</option>
   <option value="8">8</option>
   <option value="7">7</option>
   
@@ -1653,8 +1674,9 @@
 <div class="med">
 <div class="a01">
 <select id="flowctrl2" name="flowctrl2" class="a4">
-<option value="none">none</option>
-<option value="ctsrts">CTS/RTS</option>
+    <option value="" >Select one:</option>
+    <option value="none">none</option>
+    <option value="ctsrts">CTS/RTS</option>
 
 </select>
 <div class="tooltip66">
@@ -1951,6 +1973,8 @@
   <label > <a title="hlp">Change Default Port Web Server <span class="txtsize">[default is 8001]</span></a></label>
   <div class="g2">
   <select id="defport" name="defport">
+        <option value="" >Select one:</option>
+
 <option value="8001">8001</option>
 <option value="9002">9002</option>
 <option value="10003">10003</option>
@@ -1971,6 +1995,8 @@
 
   <div class="g2">
 <select id="input1_gmt" name="input1_gmt" >
+      <option value="" >Select one:</option>
+
 <option value="GMT-11">GMT-11</option>
 <option value="GMT-10">GMT-10</option>
 <option value="GMT-9">GMT-9</option>
